@@ -109,9 +109,6 @@ app.layout = html.Div(children=[
 
 def update_value(df):
 
-    df.reset_index(inplace=True)
-    df.set_index(inplace=True)
-
     return dcc.Graph(
         id="test",
         figure=go.Figure(
